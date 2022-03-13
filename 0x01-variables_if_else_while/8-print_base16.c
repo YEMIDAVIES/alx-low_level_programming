@@ -2,7 +2,6 @@
 
 /**
 * main - print all hexadecimal numbers
-* 
 * Return: Always 0 (sucess)
 *
 */
