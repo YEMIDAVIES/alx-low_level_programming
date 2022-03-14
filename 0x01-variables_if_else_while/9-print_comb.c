@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
-* main - print combinations of numbers
-* Return: Always 0 (sucess)
-*/
+ * main - print combinations of numbers
+ * Return: Always 0 (sucess)
+ */
 
 int main(void)
 {
