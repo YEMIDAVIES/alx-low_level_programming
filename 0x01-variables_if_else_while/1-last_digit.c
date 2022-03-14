@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- * main -  print the last digit of the number stored in the variable n.
- *
- * Return: Always 0 (sucess)
+* main - Check  last digit of a number
+*
+* Return: Always 0 (Success)
 */
 
 int main(void)
@@ -19,11 +19,11 @@ int main(void)
 
 	if (m > 5)
 	{
-		printf("Last digit of %d is %d is greater than 5\n", n, m);
+		printf("Last digit of %d is %d and is greater than 5\n", n, m);
 	}
 	else if (m == 0)
 	{
-		 printf("Last digit of %d is %d and is 0\n", n, m);
+		printf("Last digit of %d is %d and is 0\n", n, m);
 	}
 	else
 	{
