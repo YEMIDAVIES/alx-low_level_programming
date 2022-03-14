@@ -2,7 +2,9 @@
 
 /**
  * main - print combinations of numbers
- * Return: Always 0 (sucess)
+ *
+ * Return: Always 0 (Success)
+ *
  */
 
 int main(void)
@@ -15,7 +17,7 @@ int main(void)
 		if (n != 57)
 		{
 			putchar(',');
-			putchar(' ')
+			putchar(' ');
 		}
 	}
 	putchar('\n');
