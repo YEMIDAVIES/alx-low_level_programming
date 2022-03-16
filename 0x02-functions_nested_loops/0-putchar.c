@@ -1,4 +1,5 @@
-#include <main.h>
+#include <stdio.h>
+#include "main.h"
 
 /**
 * main - prints _putchar
@@ -10,12 +11,14 @@
 
 int main(void)
 {
-	char text[9] = "_putchar";
+	char s[9] = "_putchar";
 	int i = 0;
 
-	for (i = 0; i < 8; i++)
+	while (i<8)
 	{
-		_putchar(text[i]);
+		_putchar(s[i]);
+		i++;
+
 	}
 	_putchar('\n');
 
