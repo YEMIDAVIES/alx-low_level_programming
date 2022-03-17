@@ -1,31 +1,32 @@
-#include "main.h"
+#include <stdio.h>
 /**
- *print_triangle - prints a triangle of size size.
- *@size: size of triangle.
+ *main - largest prime facter of 612852475143.
  *
- *Return: void.
+ *Return: 0
  */
-void print_triangle(int size)
+int main(void)
 {
-	int i, j, space;
+	long int x, i, pf;
 
-	if (size <= 0)
+	pf = -1;
+	x = 612852475143;
+
+	while (x % 2 == 0)
 	{
-		_putchar('\n');
+		pf = 2;
+		x = x / 2;
 	}
-	else
+	for (i = 3; i <= x / 2; i = i + 2)
 	{
-		for (i = 1; i <= size; i++)
+		while (x % i == 0)
 		{
-			for (space = 1; space <= (size - i); space++)
-			{
-				_putchar(' ');
-			}
-			for (j = 1; j <= i; j++)
-			{
-				_putchar('#');
-			}
-			_putchar('\n');
+			pf = i;
+			x = x / i;
 		}
 	}
+	if (x > 2)
+		pf = x;
+
+	printf("%ld\n", pf);
+	return (0);
 }
